@@ -15,10 +15,6 @@ tablename = sys.argv[2]
 fo = open(inputfile, 'r')
 lines = fo.read().split('\n')
 
-# add every first comma-delimited item to the set, except skip the first and last lines
-#for line in lines[1:len(lines) - 1:]:
-#    primarykeys.add(line.split(',')[0])
-
 #mysql setup
 try:
     con = mysql.connector.connect(user='hackathon',
